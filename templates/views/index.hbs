@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <title>Astrophile</title>
+</head>
+
+<body>
+    {{>navbar}}
+    {{!-- {{Hero section}} --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div
+                        class="col-md-6 col-12 hero-text order-md 1 order-0 d-flex justify-content-center align-items-start flex-column">
+                        <h1>WE WILL HELP YOU TO</h1>
+                        <h1>GROW YOUR BUSINESS</h1>
+                        <p>We Are The Team Of <span class="bold-style"> Profesional Developer✌</span></p>
+                        <p>Here are my social media links <span > <a href="https://www.instagram.com/_sameer_kumar_10_/" class="fa fa-instagram fa-lg"></a>
+                                <a href="https://www.linkedin.com/in/sameer-kumar-63b85b223/" class="fa fa-linkedin fa-lg"></a>
+                                <a href="https://github.com/sameerkumar10/Frontendpage.git" class="fa fa-github fa-lg"></a></span> </p>
+
+
+                    </div>
+
+                    <div class="col-md-6 col-12 hero-text order-md 0 order-1">
+                        <figure>
+                            <img src="images/2.jpg" class="img-fluid" alt="Loading...">
+                        </figure>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{!-- {{about section}} --}}
+    {{>about}}
+    {{!-- {{service section}} --}}
+    {{>service}}
+    {{!-- {{maps section}} --}}
+    {{>maps}}
+    {{!-- {{contact new page section}} --}}
+    {{>footer}}
+
+    <script src="../jq/jquerry.js" type="text/javascript"> </script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <script src="../js/bootstrap.js" type="text/javascript"> </script>
+</body>
+
+</html>
